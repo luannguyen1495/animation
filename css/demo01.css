@@ -1,0 +1,49 @@
+.demo{
+    width: 150px;
+    height: 150px;
+    background: red;
+    animation: to-right 2s infinite alternate;
+}
+
+@keyframes to-right {
+    from{
+        width: 150px;
+    }
+    to{
+        width: 300px;
+        background: yellow;
+    }
+}
+.demo2{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation: nhin-sang-phai 5s infinite alternate;
+}
+.demo2 img{
+    width: 100%;
+    max-height: 150px;
+}
+
+
+@keyframes nhin-sang-phai {
+    0%{
+        left: 0;
+        right: 0;
+    }
+    20%{
+        left: 200px;
+        top: 30px;
+        transform: rotate(90deg);
+    }
+    40%{
+        left: 400px;
+        top: 50px;
+        transform: rotate(90deg);
+    }
+    100%{
+        left: 500px;
+        top: 100px;
+        transform: rotate(180deg);
+    }
+}

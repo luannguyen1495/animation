@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            display: flex;
+        }
+        .hinh{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px 10px;
+            animation: demo 2s ease infinite;
+        }
+        .xanh{
+            background: green;
+            
+        }
+        .do{
+            background-color: red;
+            animation-delay: 0.25s;
+        }
+        .tim{
+            background-color: purple;
+            animation-delay: 0.5s;
+        }
+        .vang{
+            background-color: yellow;
+            animation-delay: 0.75s;
+        }
+        @keyframes demo {
+            50%{
+                transform: translateY(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <div class="hinh xanh"></div>
+        <div class="hinh do"></div>
+        <div class="hinh tim"></div>
+        <div class="hinh vang"></div>
+    </div>
+</body>
+</html>
